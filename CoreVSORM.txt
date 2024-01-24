@@ -1,0 +1,41 @@
+SQLAlchemy provides two primary approaches for interacting with databases: 
+SQLAlchemy Core and SQLAlchemy ORM (Object-Relational Mapping). 
+Here's a brief overview of the differences between the two:
+
+SQLAlchemy Core:
+
+Description: Core is a lower-level, SQL-centric library that allows you to interact with databases using SQL expressions directly. 
+It provides a set of tools for building and executing SQL statements without the need for an object-relational mapping.
+
+Usage: You define tables, columns, and relationships using the Table and Column classes. 
+SQL expressions are created using functions like select, insert, update, and delete. You work directly with SQL constructs and have more control over the generated SQL.
+
+
+SQLAlchemy ORM:
+
+Description: ORM is a higher-level, Pythonic way of interacting with databases. 
+It allows you to map Python objects to database tables, and it handles the translation between the object-oriented world of Python and the relational world of databases.
+
+Usage: You define your data models as Python classes, and SQLAlchemy takes care of creating the necessary tables and managing the database interactions. 
+It provides a higher level of abstraction, making it more convenient and Pythonic.
+
+
+
+
+
+Use Core When:
+
+You prefer working with raw SQL expressions and want fine-grained control over SQL statements.
+Your application requirements are more SQL-centric.
+You want a lightweight solution without the overhead of mapping Python objects to database tables.
+
+Use ORM When:
+You want to work with a more Pythonic, object-oriented interface.
+You prefer a higher level of abstraction and automatic handling of database operations.
+Your application involves complex relationships and requires an object-relational mapping.
+In many cases, projects use a combination of both Core and ORM, depending on the specific requirements and preferences of the developers.
+
+
+
+
+
