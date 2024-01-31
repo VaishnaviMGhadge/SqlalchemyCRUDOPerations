@@ -1,5 +1,5 @@
 from sqlalchemy import insert 
-from creatingtable import user_table,comments_table
+from creatingtable import user_table
 from connect1 import engine
 
 statement=insert(user_table)
